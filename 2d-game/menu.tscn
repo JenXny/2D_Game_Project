@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c3uua25h8l0wb"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_qiowl"]
-[ext_resource type="Texture2D" uid="uid://b7jyoj4xky5he" path="res://fb45b511-c02f-4e4f-b19e-da1f61bcd1e5_scaled.jpg" id="2_rxlxj"]
+[ext_resource type="Texture2D" uid="uid://b7jyoj4xky5he" path="res://startbackground.jpg" id="2_rxlxj"]
 [ext_resource type="Texture2D" uid="uid://cem2wtoddwd7t" path="res://rockslide game title wip.png" id="3_22qxd"]
 
 [node name="Menu" type="Control"]
@@ -13,8 +13,8 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_qiowl")
 
-[node name="background" type="Sprite2D" parent="."]
-position = Vector2(579, 328)
+[node name="opening" type="Sprite2D" parent="."]
+position = Vector2(600, 339)
 texture = ExtResource("2_rxlxj")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
