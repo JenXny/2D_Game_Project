@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3uua25h8l0wb"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_qiowl"]
+[ext_resource type="Texture2D" uid="uid://b7jyoj4xky5he" path="res://fb45b511-c02f-4e4f-b19e-da1f61bcd1e5_scaled.jpg" id="2_rxlxj"]
+[ext_resource type="Texture2D" uid="uid://cem2wtoddwd7t" path="res://rockslide game title wip.png" id="3_22qxd"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qiowl")
+
+[node name="Fb45b511-c02f-4e4f-b19e-da1f61Bcd1e5Scaled" type="Sprite2D" parent="."]
+position = Vector2(579, 328)
+texture = ExtResource("2_rxlxj")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = 68.31
+offset_right = 50.0
+offset_bottom = 169.31
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Play"
+
+[node name="Load" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Load"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quit"
+
+[node name="RockslideGameTitleWip" type="Sprite2D" parent="."]
+position = Vector2(574, 282)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("3_22qxd")
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Load" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
