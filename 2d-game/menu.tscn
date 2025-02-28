@@ -13,7 +13,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_qiowl")
 
-[node name="Fb45b511-c02f-4e4f-b19e-da1f61Bcd1e5Scaled" type="Sprite2D" parent="."]
+[node name="background" type="Sprite2D" parent="."]
 position = Vector2(579, 328)
 texture = ExtResource("2_rxlxj")
 
