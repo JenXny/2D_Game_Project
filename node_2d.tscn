@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqe13fgd5adr"]
+
+[ext_resource type="Texture2D" uid="uid://cul01bwqhu7fh" path="res://crystal cave tilesheet.png" id="1_bybl2"]
+[ext_resource type="Texture2D" uid="uid://d4i407hod58sv" path="res://Viele_Stein.png" id="2_dh33l"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CrystalCaveTilesheet" type="Sprite2D" parent="."]
+position = Vector2(200, 311)
+scale = Vector2(0.108889, 0.108889)
+texture = ExtResource("1_bybl2")
+
+[node name="crystals" type="Sprite2D" parent="."]
+position = Vector2(792.421, 260)
+scale = Vector2(1.11842, 1.11842)
+texture = ExtResource("2_dh33l")
