@@ -147,6 +147,7 @@ animations = [{
 }]
 
 [node name="player" type="Node2D"]
+scale = Vector2(2.63965, 2.58344)
 
 [node name="boy" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_e56et")
