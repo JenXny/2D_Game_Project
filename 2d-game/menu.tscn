@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://c3uua25h8l0wb"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_qiowl"]
-[ext_resource type="Texture2D" uid="uid://b7jyoj4xky5he" path="res://startbackground.jpg" id="2_rxlxj"]
-[ext_resource type="Texture2D" uid="uid://cem2wtoddwd7t" path="res://rockslide game title wip.png" id="3_22qxd"]
+[ext_resource type="Texture2D" uid="uid://b7jyoj4xky5he" path="res://textures/startbackground.jpg" id="2_rxlxj"]
+[ext_resource type="Texture2D" uid="uid://cem2wtoddwd7t" path="res://textures/rockslide game title wip.png" id="3_22qxd"]
 [ext_resource type="PackedScene" uid="uid://de28dp86o44j7" path="res://game.tscn" id="4_hdcp3"]
 [ext_resource type="PackedScene" uid="uid://crpvvlrw07kj1" path="res://player.tscn" id="5_arkqb"]
 
@@ -57,7 +57,7 @@ texture = ExtResource("3_22qxd")
 [node name="Node2D" parent="." instance=ExtResource("4_hdcp3")]
 visible = false
 
-[node name="player" parent="Node2D" instance=ExtResource("5_arkqb")]
+[node name="player2" parent="Node2D" instance=ExtResource("5_arkqb")]
 visible = false
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]

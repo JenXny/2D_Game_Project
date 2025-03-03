@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cem2wtoddwd7t"
-path="res://.godot/imported/rockslide game title wip.png-5750e382a54045bfcd3eda421eb7e7c6.ctex"
+path="res://.godot/imported/rockslide game title wip.png-0a040b60882f6f46eb03b9399523e924.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://rockslide game title wip.png"
-dest_files=["res://.godot/imported/rockslide game title wip.png-5750e382a54045bfcd3eda421eb7e7c6.ctex"]
+source_file="res://textures/rockslide game title wip.png"
+dest_files=["res://.godot/imported/rockslide game title wip.png-0a040b60882f6f46eb03b9399523e924.ctex"]
 
 [params]
 

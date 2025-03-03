@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cuq22jcjyfdr3"
-path="res://.godot/imported/Cave - SmallRocks.png-dab442a9d36abf3189e57fe777fd7d11.ctex"
+uid="uid://cqcmm7et5bxgq"
+path="res://.godot/imported/rock walls texture 1x1.png-316e01fe9f8d504baaca314cfa57d216.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cave - SmallRocks.png"
-dest_files=["res://.godot/imported/Cave - SmallRocks.png-dab442a9d36abf3189e57fe777fd7d11.ctex"]
+source_file="res://textures/rock walls texture 1x1.png"
+dest_files=["res://.godot/imported/rock walls texture 1x1.png-316e01fe9f8d504baaca314cfa57d216.ctex"]
 
 [params]
 

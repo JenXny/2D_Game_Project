@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ecpe58uebsek"
-path="res://.godot/imported/Cave - Platforms.png-e3eff41de4a2e3a288f2f099433b0fc0.ctex"
+uid="uid://cjw81q773s4hm"
+path="res://.godot/imported/crystal_collectible.png-6e361eee58530ce3101a409c36bf335b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cave - Platforms.png"
-dest_files=["res://.godot/imported/Cave - Platforms.png-e3eff41de4a2e3a288f2f099433b0fc0.ctex"]
+source_file="res://textures/crystal_collectible.png"
+dest_files=["res://.godot/imported/crystal_collectible.png-6e361eee58530ce3101a409c36bf335b.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7jyoj4xky5he"
-path="res://.godot/imported/startbackground.jpg-474b3fc5a5e81742bc32cb64b20ecc89.ctex"
+uid="uid://cxqgty37g33p6"
+path="res://.godot/imported/Cave - RockCombinations1.png-2fd38081be5810c1984c4b092492a64c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://startbackground.jpg"
-dest_files=["res://.godot/imported/startbackground.jpg-474b3fc5a5e81742bc32cb64b20ecc89.ctex"]
+source_file="res://textures/Cave - RockCombinations1.png"
+dest_files=["res://.godot/imported/Cave - RockCombinations1.png-2fd38081be5810c1984c4b092492a64c.ctex"]
 
 [params]
 

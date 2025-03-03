@@ -1,0 +1,125 @@
+[gd_scene load_steps=2 format=3 uid="uid://cx7817g3hmyat"]
+
+[ext_resource type="Texture2D" uid="uid://c2j5hjfq2jh7m" path="res://textures/map_2.png" id="1_v1lf7"]
+
+[node name="floor map- brown" type="Node2D"]
+position = Vector2(-169.567, -155.89)
+
+[node name="Map2" type="Sprite2D" parent="."]
+texture = ExtResource("1_v1lf7")
+
+[node name="Map3" type="Sprite2D" parent="Map2"]
+position = Vector2(108.72, 0)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map4" type="Sprite2D" parent="Map2"]
+position = Vector2(325.265, 0)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map5" type="Sprite2D" parent="Map2"]
+position = Vector2(216.545, 0)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map6" type="Sprite2D" parent="Map2"]
+position = Vector2(433.985, 0)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map7" type="Sprite2D" parent="Map2"]
+position = Vector2(-6.79479, 75.2645)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map8" type="Sprite2D" parent="Map2"]
+position = Vector2(101.925, 75.2645)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map9" type="Sprite2D" parent="Map2"]
+position = Vector2(318.47, 75.2645)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map10" type="Sprite2D" parent="Map2"]
+position = Vector2(209.75, 75.2645)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map11" type="Sprite2D" parent="Map2"]
+position = Vector2(427.19, 75.2645)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map2" type="Sprite2D" parent="Map2/Map11"]
+position = Vector2(-442.038, 72.0448)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map3" type="Sprite2D" parent="Map2/Map11"]
+position = Vector2(-333.318, 72.0448)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map4" type="Sprite2D" parent="Map2/Map11"]
+position = Vector2(-116.773, 72.0448)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map5" type="Sprite2D" parent="Map2/Map11"]
+position = Vector2(-225.493, 72.0448)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map6" type="Sprite2D" parent="Map2/Map11"]
+position = Vector2(-8.05338, 72.0448)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map7" type="Sprite2D" parent="Map2/Map11"]
+position = Vector2(-462.535, 99.9932)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map8" type="Sprite2D" parent="Map2/Map11"]
+position = Vector2(-353.815, 99.9932)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map9" type="Sprite2D" parent="Map2/Map11"]
+position = Vector2(-137.27, 99.9932)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map10" type="Sprite2D" parent="Map2/Map11"]
+position = Vector2(-245.99, 99.9932)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map11" type="Sprite2D" parent="Map2/Map11"]
+position = Vector2(-28.5504, 99.9932)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map12" type="Sprite2D" parent="Map2/Map11"]
+position = Vector2(-469.33, 175.258)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map13" type="Sprite2D" parent="Map2/Map11"]
+position = Vector2(-360.61, 175.258)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map14" type="Sprite2D" parent="Map2/Map11"]
+position = Vector2(-144.065, 175.258)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map15" type="Sprite2D" parent="Map2/Map11"]
+position = Vector2(-252.785, 175.258)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map16" type="Sprite2D" parent="Map2/Map11"]
+position = Vector2(-35.3452, 175.258)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map2" type="Sprite2D" parent="Map2/Map11/Map16"]
+position = Vector2(-442.038, 72.0448)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map3" type="Sprite2D" parent="Map2/Map11/Map16"]
+position = Vector2(-333.318, 72.0448)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map4" type="Sprite2D" parent="Map2/Map11/Map16"]
+position = Vector2(-116.773, 72.0448)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map5" type="Sprite2D" parent="Map2/Map11/Map16"]
+position = Vector2(-225.493, 72.0448)
+texture = ExtResource("1_v1lf7")
+
+[node name="Map6" type="Sprite2D" parent="Map2/Map11/Map16"]
+position = Vector2(-8.05338, 72.0448)
+texture = ExtResource("1_v1lf7")
