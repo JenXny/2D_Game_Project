@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0mk0c2o2eyjp"]
+
+[ext_resource type="Texture2D" uid="uid://cjw81q773s4hm" path="res://textures/crystal_collectible.png" id="1_2qj7e"]
+
+[node name="CrystalCollectible" type="Sprite2D"]
+position = Vector2(-112.747, 26.7063)
+texture = ExtResource("1_2qj7e")
