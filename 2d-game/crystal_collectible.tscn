@@ -1,7 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://c0mk0c2o2eyjp"]
+[gd_scene load_steps=4 format=3 uid="uid://c0mk0c2o2eyjp"]
 
 [ext_resource type="Texture2D" uid="uid://cjw81q773s4hm" path="res://textures/crystal_collectible.png" id="1_2qj7e"]
+[ext_resource type="Script" path="res://crystal_collectible.gd" id="2_tbb08"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rm6o2"]
 
 [node name="CrystalCollectible" type="Sprite2D"]
-position = Vector2(-112.747, 26.7063)
 texture = ExtResource("1_2qj7e")
+script = ExtResource("2_tbb08")
+
+[node name="area2d" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="area2d"]
+shape = SubResource("RectangleShape2D_rm6o2")
+
+[connection signal="body_entered" from="area2d" to="." method="_on_area_2d_body_entered"]

@@ -15,7 +15,8 @@ grow_vertical = 2
 script = ExtResource("1_qiowl")
 
 [node name="opening" type="Sprite2D" parent="."]
-position = Vector2(600, 339)
+position = Vector2(573, 574.75)
+scale = Vector2(1.045, 1.69852)
 texture = ExtResource("2_rxlxj")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
@@ -49,7 +50,7 @@ layout_mode = 2
 text = "Quit"
 
 [node name="RockslideGameTitleWip" type="Sprite2D" parent="."]
-position = Vector2(574, 282)
+position = Vector2(574, 507)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("3_22qxd")
 
