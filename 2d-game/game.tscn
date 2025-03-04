@@ -7839,6 +7839,7 @@ tile_map_data = PackedByteArray("AADx/woAAgABABgAAGDz/woAAgABABgAAGD1/woAAgABABg
 tile_set = SubResource("TileSet_vo3w4")
 
 [node name="player" parent="." instance=ExtResource("4_b4wig")]
+<<<<<<< Updated upstream
 scale = Vector2(1, 1)
 
 [node name="RockWallsTexture1x1" parent="." instance=ExtResource("6_wtdw4")]
@@ -7861,3 +7862,6 @@ offset_right = 50.0
 offset_bottom = 49.935
 grow_horizontal = 2
 text = "SCORE:"
+=======
+position = Vector2(-51.8992, 88.1927)
+>>>>>>> Stashed changes

@@ -148,8 +148,12 @@ animations = [{
 }]
 
 [node name="player" type="Node2D"]
+<<<<<<< Updated upstream
 scale = Vector2(2.63965, 2.58344)
 script = ExtResource("1_tnl7l")
+=======
+scale = Vector2(2.52432, 2.39973)
+>>>>>>> Stashed changes
 
 [node name="boy" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_e56et")
