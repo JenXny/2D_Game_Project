@@ -7839,6 +7839,7 @@ tile_map_data = PackedByteArray("AADx/woAAgABABgAAGDz/woAAgABABgAAGD1/woAAgABABg
 tile_set = SubResource("TileSet_vo3w4")
 
 [node name="player" parent="." instance=ExtResource("4_b4wig")]
+position = Vector2(40.7141, 42.2331)
 
 [node name="RockWallsTexture1x1" parent="." instance=ExtResource("6_wtdw4")]
 

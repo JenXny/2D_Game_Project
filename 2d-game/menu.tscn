@@ -56,12 +56,6 @@ texture = ExtResource("3_22qxd")
 [node name="Node2D" parent="." instance=ExtResource("4_hdcp3")]
 visible = false
 
-<<<<<<< Updated upstream
-[node name="player2" parent="Node2D" instance=ExtResource("5_arkqb")]
-visible = false
-
-=======
->>>>>>> Stashed changes
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Load" to="." method="_on_load_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
