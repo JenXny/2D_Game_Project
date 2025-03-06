@@ -6,6 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rm6o2"]
 
 [node name="CrystalCollectible" type="Sprite2D"]
+scale = Vector2(2, 2)
 texture = ExtResource("1_2qj7e")
 script = ExtResource("2_tbb08")
 

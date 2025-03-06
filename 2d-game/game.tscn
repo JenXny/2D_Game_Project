@@ -7826,10 +7826,10 @@ sources/0 = SubResource("TileSetAtlasSource_egtfa")
 sources/2 = SubResource("TileSetAtlasSource_3trqt")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x8gpn"]
-size = Vector2(555.758, 39.4069)
+size = Vector2(1181.88, 39.4069)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_18xkn"]
-size = Vector2(26.397, 762.681)
+size = Vector2(32.0993, 1169.67)
 
 [node name="level" type="Node2D"]
 position = Vector2(-1, 0)
@@ -7844,7 +7844,7 @@ tile_set = SubResource("TileSet_vo3w4")
 position = Vector2(270, 320)
 
 [node name="CrystalCollectible" parent="." instance=ExtResource("7_237qw")]
-position = Vector2(364, 209)
+position = Vector2(-76, 208)
 
 [node name="Score label (tbd)" type="CanvasLayer" parent="."]
 visible = false
@@ -7870,19 +7870,19 @@ text = "SCORE:"
 position = Vector2(255, 223)
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0.855545, -230.59)
+position = Vector2(311, -223)
 shape = SubResource("RectangleShape2D_x8gpn")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(8.50074, 501.829)
+position = Vector2(311.06, 922)
 shape = SubResource("RectangleShape2D_x8gpn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(270.01, 122.352)
+position = Vector2(886.95, 350.835)
 shape = SubResource("RectangleShape2D_18xkn")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-256.364, 120.489)
+position = Vector2(-266, 350)
 shape = SubResource("RectangleShape2D_18xkn")
 
 [node name="Area2D2" parent="." instance=ExtResource("6_wtdw4")]
