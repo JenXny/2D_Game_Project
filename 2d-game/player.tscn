@@ -175,10 +175,11 @@ radius = 16.0
 height = 41.0
 
 [node name="Player" type="CharacterBody2D"]
+scale = Vector2(2, 2)
 script = SubResource("GDScript_cxvok")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(2, 2)
+scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_1ov0r")
 frame = 13
 frame_progress = 0.668324
