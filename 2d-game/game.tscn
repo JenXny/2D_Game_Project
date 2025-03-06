@@ -7839,7 +7839,6 @@ tile_set = SubResource("TileSet_vo3w4")
 
 [node name="player" parent="." instance=ExtResource("4_b4wig")]
 position = Vector2(-0.894814, -13.6637)
-speed = 2.0
 
 [node name="RockWallsTexture1x1" parent="." instance=ExtResource("6_wtdw4")]
 
