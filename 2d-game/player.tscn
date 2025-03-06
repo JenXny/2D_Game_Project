@@ -5,8 +5,10 @@
 [sub_resource type="GDScript" id="GDScript_cxvok"]
 script/source = "extends CharacterBody2D
 
-@export var speed = 2.
+@export var speed = 2
 @export var score = 0
+#@export var direction = 
+#^^^ to check directions
 
 func _ready():
 	pass
@@ -168,8 +170,9 @@ animations = [{
 "speed": 30.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_f5clb"]
-radius = 14.0357
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7se5l"]
+radius = 16.0
+height = 41.0
 
 [node name="Player" type="CharacterBody2D"]
 script = SubResource("GDScript_cxvok")
@@ -181,7 +184,7 @@ frame = 13
 frame_progress = 0.668324
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_f5clb")
+shape = SubResource("CapsuleShape2D_7se5l")
 
 [node name="Character" type="Sprite2D" parent="."]
 visible = false

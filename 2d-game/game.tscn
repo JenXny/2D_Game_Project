@@ -1,12 +1,12 @@
-[gd_scene load_steps=11 format=4 uid="uid://de28dp86o44j7"]
+[gd_scene load_steps=13 format=4 uid="uid://de28dp86o44j7"]
 
-[ext_resource type="PackedScene" uid="uid://cw4n775fhwc46" path="res://floor_map__brown.tscn" id="1_ayjxs"]
 [ext_resource type="Script" path="res://game.gd" id="1_h5ybq"]
 [ext_resource type="Texture2D" uid="uid://cwpkfc7mvhlgw" path="res://textures/Viele_Stein.png" id="2_nxhi6"]
 [ext_resource type="Texture2D" uid="uid://b2ihp0b52fkxh" path="res://textures/Cave - Floor.png" id="4_0q2em"]
 [ext_resource type="PackedScene" uid="uid://m4q84axkfn18" path="res://player.tscn" id="4_b4wig"]
-[ext_resource type="PackedScene" path="res://rock_walls_texture_1x_1.tscn" id="6_wtdw4"]
+[ext_resource type="PackedScene" uid="uid://cpb5e5fnolkor" path="res://rock_walls_texture_1x_1.tscn" id="6_wtdw4"]
 [ext_resource type="PackedScene" uid="uid://c0mk0c2o2eyjp" path="res://crystal_collectible.tscn" id="7_237qw"]
+[ext_resource type="PackedScene" uid="uid://cvn6d0d1mm88n" path="res://GameOverLayer.tscn" id="8_lwnm8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_egtfa"]
 texture = ExtResource("4_0q2em")
@@ -7825,32 +7825,34 @@ texture = ExtResource("2_nxhi6")
 sources/0 = SubResource("TileSetAtlasSource_egtfa")
 sources/2 = SubResource("TileSetAtlasSource_3trqt")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x8gpn"]
+size = Vector2(555.758, 39.4069)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_18xkn"]
+size = Vector2(26.397, 762.681)
+
 [node name="level" type="Node2D"]
-position = Vector2(557, 350)
-scale = Vector2(2.2351, 1.61011)
 script = ExtResource("1_h5ybq")
 
-[node name="floor map- brown" parent="." instance=ExtResource("1_ayjxs")]
-visible = false
-
 [node name="TileMap" type="TileMapLayer" parent="."]
+position = Vector2(254, 221)
 tile_map_data = PackedByteArray("AAAQAPL/AgADAAkAAAAQAPP/AgADAAkAAAAQAPT/AgADAAkAAAAQAPX/AgADAAkAAAAQAPb/AgADAAkAAAAQAPf/AgADAAkAAAAQAPj/AgADAAkAAAAQAPn/AgADAAkAAAAQAPr/AgADAAkAAAAQAPv/AgADAAkAAAAQAPz/AgADAAkAAAAQAP3/AgADAAkAAAAQAP7/AgADAAkAAAAQAP//AgADAAkAAAAQAAAAAgADAAkAAAAQAAEAAgADAAkAAAAQAAIAAgADAAkAAAAQAAMAAgADAAkAAAAQAAQAAgADAAkAAAAQAAUAAgADAAkAAAAQAAYAAgADAAkAAAAQAAoAAgADAAkAAAAQAAsAAgADAAkAAAAQAAwAAgADAAkAAAAQAA0AAgADAAkAAAAQAA4AAgADAAkAAAAQAA8AAgADAAkAAAAQABAAAgADAAkAAAAQABEAAgADAAkAAAAQABIAAgADAAkAAAAQABMAAgADAAkAAAAQABQAAgADAAkAAAAQABUAAgADAAkAAAAQABYAAgADAAkAAAAQABcAAgADAAkAAAAQABgAAgADAAkAAAAQABkAAgADAAkAAAAQABsAAgADAAkAAAAQABwAAgADAAkAAAAQAB0AAgADAAkAAAAQAB4AAgADAAkAAAAPAB4AAgADAAkAAAAOAB4AAgADAAkAAAANAB4AAgAEAAkAAAAMAB4AAgADAAkAAAALAB4AAgADAAkAAAAKAB4AAgADAAkAAAAJAB4AAgADAAkAAAAIAB4AAgADAAkAAAAHAB4AAgADAAkAAAAGAB4AAgADAAkAAAAFAB4AAgADAAkAAAAEAB4AAgADAAkAAAADAB4AAgADAAkAAAACAB4AAgADAAkAAAABAB4AAgADAAkAAAAAAB4AAgADAAkAAAD//x4AAgADAAkAAAD+/x4AAgADAAkAAAD9/x4AAgADAAkAAAD8/x4AAgADAAkAAAD7/x4AAgADAAkAAAD6/x4AAgADAAkAAAD5/x4AAgADAAkAAAD4/x4AAgADAAkAAAD3/x4AAgADAAkAAAD2/x4AAgADAAkAAAD1/x4AAgADAAkAAAD0/x4AAgADAAkAAADz/x4AAgADAAkAAADy/x4AAgADAAkAAADx/x4AAgADAAkAAADw/x4AAgADAAkAAADw/x0AAgADAAkAAADw/xwAAgADAAkAAADw/xsAAgADAAkAAADw/xoAAgADAAkAAADw/xkAAgADAAkAAADw/xgAAgADAAkAAADw/xcAAgADAAkAAADw/xYAAgADAAkAAADw/xUAAgADAAkAAADw/xQAAgADAAkAAADw/xMAAgADAAkAAADw/xIAAgADAAkAAADw/xEAAgADAAkAAADw/xAAAgADAAkAAADw/w8AAgADAAkAAADw/w4AAgADAAkAAADw/w0AAgADAAkAAADw/wwAAgADAAkAAADw/wsAAgADAAkAAADw/woAAgADAAkAAADw/wkAAgADAAkAAADw/wgAAgADAAkAAADw/wcAAgADAAkAAADw/wYAAgADAAkAAADw/wUAAgADAAkAAADw/wQAAgADAAkAAADw/wMAAgADAAkAAADw/wIAAgADAAkAAADw/wEAAgADAAkAAADw/wAAAgADAAkAAADw////AgADAAkAAADw//7/AgADAAkAAADw//3/AgADAAkAAADw//z/AgADAAkAAADw//v/AgADAAkAAADw//r/AgADAAkAAADw//n/AgADAAkAAADw//j/AgADAAkAAADw//f/AgADAAkAAADw//X/AgAEAAkAAADw//T/AgAEAAkAAADw//P/AgAEAAkAAADw//L/AgAEAAkAAADy//L/AgADAAkAAADz//L/AgADAAkAAAD0//L/AgADAAkAAAD1//L/AgADAAkAAAD2//L/AgADAAkAAAD3//L/AgADAAkAAAD4//L/AgADAAkAAAD5//L/AgADAAkAAAD///L/AgADAAkAAAAAAPL/AgADAAkAAAACAPL/AgADAAkAAAAGAPL/AgADAAkAAAAJAPL/AgADAAkAAAALAPL/AgADAAkAAAAPAPL/AgADAAkAAADx//L/AgAEAAkAAAAQAAcAAgAEAAgAAAAQAAgAAgAEAAgAAAAQAAkAAgAEAAgAAAAOAPL/AgAEAAgAAAANAPL/AgAEAAgAAAAMAPL/AgAEAAgAAAAKAPL/AgAEAAgAAAAIAPL/AgAEAAgAAAAHAPL/AgAEAAgAAAAFAPL/AgAEAAgAAAAEAPL/AgAEAAgAAAADAPL/AgAEAAgAAAABAPL/AgAEAAgAAAD+//L/AgAEAAgAAAD9//L/AgAEAAgAAAD8//L/AgAEAAgAAAD7//L/AgAEAAgAAAD6//L/AgAEAAgAAADw//b/AgAEAAgAAADy//X/AgAFABQAAADy//n/AgAFABQAAADy//3/AgAFABQAAADy/wAAAgAFABQAAADy/wQAAgAFABQAAADy/wgAAgAFABQAAADy/wwAAgAFABQAAADy/xAAAgAFABQAAADy/xQAAgAFABQAAADy/xgAAgAFABQAAADy/xwAAgAFABQAAAAOAPX/AgAFABQAAAAOAPn/AgAFABQAAAAOAP3/AgAFABQAAAAOAAEAAgAFABQAAAAOAAUAAgAFABQAAAAOAAkAAgAFABQAAAAOAA0AAgAFABQAAAAOABEAAgAFABQAAAAOABUAAgAFABQAAAAOABkAAgAFABQAAAAOABwAAgAFABQAAAAQABoAAgAEAAgAAAAOAPT/AgABABgAAADy//T/AgABABgAAAD2//T/AgABABgAAAD6//T/AgABABgAAAD+//T/AgABABgAAAACAPT/AgABABgAAAAGAPT/AgABABgAAAAKAPT/AgABABgAAAD1/xwAAgABABgAAAD3/xwAAgABABgAAAD5/xwAAgABABgAAAD7/xwAAgABABgAAAD9/xwAAgABABgAAAD//xwAAgABABgAAAABABwAAgABABgAAAADABwAAgABABgAAAAFABwAAgABABgAAAAHABwAAgABABgAAAAJABwAAgABABgAAAALABwAAgABABgAAAANABwAAgABABgAAAD1/xkAAgABABgAAAD5/xkAAgABABgAAAD9/xkAAgABABgAAAABABkAAgABABgAAAAFABkAAgABABgAAAAJABkAAgABABgAAAAMABkAAgABABgAAAD1/xYAAgABABgAAAD5/xYAAgABABgAAAD9/xYAAgABABgAAAABABYAAgABABgAAAAFABYAAgABABgAAAAJABYAAgABABgAAAAMABYAAgABABgAAAD1/xMAAgABABgAAAD5/xMAAgABABgAAAD9/xMAAgABABgAAAABABMAAgABABgAAAAFABMAAgABABgAAAAJABMAAgABABgAAAAMABMAAgABABgAAAD1/xAAAgABABgAAAD5/xAAAgABABgAAAD9/xAAAgABABgAAAABABAAAgABABgAAAAFABAAAgABABgAAAAJABAAAgABABgAAAAMABAAAgABABgAAAD1/w0AAgABABgAAAD5/w0AAgABABgAAAD9/w0AAgABABgAAAABAA0AAgABABgAAAAFAA0AAgABABgAAAAJAA0AAgABABgAAAANAA0AAgABABgAAAD1/woAAgABABgAAAD5/woAAgABABgAAAD9/woAAgABABgAAAABAAoAAgABABgAAAAFAAoAAgABABgAAAAJAAoAAgABABgAAAAMAAoAAgABABgAAAD1/wcAAgABABgAAAD5/wcAAgABABgAAAD9/wcAAgABABgAAAABAAcAAgABABgAAAAFAAcAAgABABgAAAAJAAcAAgABABgAAAAMAAcAAgABABgAAAD1/wQAAgABABgAAAD5/wQAAgABABgAAAD9/wQAAgABABgAAAABAAQAAgABABgAAAAFAAQAAgABABgAAAAJAAQAAgABABgAAAAMAAQAAgABABgAAAD1/wEAAgABABgAAAD5/wEAAgABABgAAAD9/wEAAgABABgAAAABAAEAAgABABgAAAAFAAEAAgABABgAAAAJAAEAAgABABgAAAAMAAEAAgABABgAAAD1//7/AgABABgAAAD5//7/AgABABgAAAD9//7/AgABABgAAAABAP7/AgABABgAAAAFAP7/AgABABgAAAAJAP7/AgABABgAAAAMAP7/AgABABgAAAD1//v/AgABABgAAAD5//v/AgABABgAAAD9//v/AgABABgAAAABAPv/AgABABgAAAAFAPv/AgABABgAAAAJAPv/AgABABgAAAAMAPv/AgABABgAAAD1//j/AgABABgAAAD5//j/AgABABgAAAD9//j/AgABABgAAAABAPj/AgABABgAAAAFAPj/AgABABgAAAAJAPj/AgABABgAAAANAPj/AgABABgAAAD1//b/AgABABgAAAD4//b/AgABABgAAAD8//b/AgABABgAAAAAAPb/AgABABgAAAAEAPb/AgABABgAAAAIAPb/AgABABgAAAAMAPb/AgABABgAAAA=")
 tile_set = SubResource("TileSet_vo3w4")
 
 [node name="player" parent="." instance=ExtResource("4_b4wig")]
-position = Vector2(-0.894814, -13.6637)
-
-[node name="RockWallsTexture1x1" parent="." instance=ExtResource("6_wtdw4")]
+position = Vector2(270, 320)
 
 [node name="CrystalCollectible" parent="." instance=ExtResource("7_237qw")]
+position = Vector2(364, 209)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="Score label (tbd)" type="CanvasLayer" parent="."]
+visible = false
 
-[node name="ScorePanel" type="Panel" parent="CanvasLayer"]
+[node name="ScorePanel" type="Panel" parent="Score label (tbd)"]
 offset_right = 1152.0
 offset_bottom = 50.0
 
-[node name="ScoreLabel" type="Label" parent="CanvasLayer"]
+[node name="ScoreLabel" type="Label" parent="Score label (tbd)"]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -7860,3 +7862,28 @@ offset_right = 48.1008
 offset_bottom = 130.193
 grow_horizontal = 2
 text = "SCORE:"
+
+[node name="GameOverLayer" parent="." instance=ExtResource("8_lwnm8")]
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(255, 223)
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.855545, -230.59)
+shape = SubResource("RectangleShape2D_x8gpn")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(8.50074, 501.829)
+shape = SubResource("RectangleShape2D_x8gpn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(270.01, 122.352)
+shape = SubResource("RectangleShape2D_18xkn")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-256.364, 120.489)
+shape = SubResource("RectangleShape2D_18xkn")
+
+[node name="Area2D2" parent="." instance=ExtResource("6_wtdw4")]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_border_body_entered"]

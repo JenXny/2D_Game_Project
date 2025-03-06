@@ -1,8 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://cpb5e5fnolkor"]
+[gd_scene load_steps=4 format=3 uid="uid://cpb5e5fnolkor"]
 
+[ext_resource type="Script" path="res://rock_walls.gd" id="1_ey1ba"]
 [ext_resource type="Texture2D" uid="uid://cqcmm7et5bxgq" path="res://textures/rock walls texture 1x1.png" id="1_quxbj"]
 
-[node name="RockWallsTexture1x1" type="Sprite2D"]
-position = Vector2(-121.695, -81.982)
-scale = Vector2(0.5, 0.6)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lg3xd"]
+size = Vector2(29.3333, 26.6667)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_ey1ba")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_lg3xd")
+
+[node name="RockWallsTexture1x1" type="Sprite2D" parent="."]
+scale = Vector2(0.75, 0.75)
 texture = ExtResource("1_quxbj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
