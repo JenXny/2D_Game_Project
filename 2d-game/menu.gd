@@ -1,5 +1,5 @@
 extends Control
-
+# functioning menu
 # Called when the node enters the scene tree for the first time
 func _ready() -> void:
 	# Connecting button signals (Ensure buttons are named correctly in the scene)
