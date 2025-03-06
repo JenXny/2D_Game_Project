@@ -175,7 +175,6 @@ radius = 16.0
 height = 41.0
 
 [node name="Player" type="CharacterBody2D"]
-scale = Vector2(2, 2)
 script = SubResource("GDScript_cxvok")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
