@@ -10,25 +10,30 @@ script/source = "extends CharacterBody2D
 #@export var direction = 
 #^^^ to check directions
 func _ready():
-	pass
+	velocity = Vector2(0,0)
 
 func _process(delta):
 	if Input.is_action_pressed(\"move_right\"):
-		position.x += speed
+		velocity = Vector2.ZERO
+		velocity.x = 500
 		$AnimatedSprite2D.play(\"left-right\")
 		$AnimatedSprite2D.flip_h = false
 	if Input.is_action_pressed(\"move_left\"):
-		position.x -= speed
+		velocity = Vector2.ZERO
+		velocity.x = -500
 		$AnimatedSprite2D.play(\"left-right\")
 		$AnimatedSprite2D.flip_h = true
 	if Input.is_action_pressed(\"move_up\"):
-		position.y -= speed
+		velocity = Vector2.ZERO
+		velocity.y = -500
 		$AnimatedSprite2D.play(\"up\")
 		$AnimatedSprite2D.flip_h = true
 	if Input.is_action_pressed(\"move_down\"):
-		position.y += speed
+		velocity = Vector2.ZERO
+		velocity.y = 500
 		$AnimatedSprite2D.play(\"down\")
 		$AnimatedSprite2D.flip_h = false
+	move_and_slide()
 "
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nytae"]
