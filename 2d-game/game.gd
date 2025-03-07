@@ -12,6 +12,7 @@ var rockwalltexture1x1 = preload("res://rock_walls_texture_1x_1.tscn")
 	
 
 func _ready():
+	get_tree().paused = false
 	var instance = crystalcollectible.instantiate()
 	add_child(instance)
 	instance.position.x = randi_range(58,1094)
@@ -20,7 +21,6 @@ func _ready():
 		
 func end_game():
 	$GameOverLayer.game_over()
-	$player.paused = true
 	game_started = false
 	print ("Game Over")
 

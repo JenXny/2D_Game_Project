@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://game_over_layer.gd" id="1_vx2je"]
 
 [node name="Game_Over_layer" type="CanvasLayer"]
+process_mode = 3
 script = ExtResource("1_vx2je")
 
 [node name="Panel" type="Panel" parent="."]
@@ -20,4 +21,5 @@ offset_right = 94.0
 offset_bottom = 43.0
 text = "Play Again"
 
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_reset_button_pressed"]
