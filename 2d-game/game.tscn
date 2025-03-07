@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=4 uid="uid://de28dp86o44j7"]
+[gd_scene load_steps=14 format=4 uid="uid://de28dp86o44j7"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_h5ybq"]
 [ext_resource type="Texture2D" uid="uid://cwpkfc7mvhlgw" path="res://textures/Viele_Stein.png" id="2_nxhi6"]
 [ext_resource type="Texture2D" uid="uid://b2ihp0b52fkxh" path="res://textures/Cave - Floor.png" id="4_0q2em"]
 [ext_resource type="PackedScene" uid="uid://m4q84axkfn18" path="res://player.tscn" id="4_b4wig"]
+[ext_resource type="Script" path="res://score_label.gd" id="6_fbw8j"]
 [ext_resource type="PackedScene" uid="uid://cpb5e5fnolkor" path="res://rock_walls_texture_1x_1.tscn" id="6_wtdw4"]
 [ext_resource type="PackedScene" uid="uid://c0mk0c2o2eyjp" path="res://crystal_collectible.tscn" id="7_237qw"]
 [ext_resource type="PackedScene" uid="uid://cvn6d0d1mm88n" path="res://GameOverLayer.tscn" id="8_lwnm8"]
@@ -7842,27 +7843,42 @@ tile_set = SubResource("TileSet_vo3w4")
 
 [node name="player" parent="." instance=ExtResource("4_b4wig")]
 position = Vector2(270, 320)
+scale = Vector2(3, 3)
 
 [node name="CrystalCollectible" parent="." instance=ExtResource("7_237qw")]
 position = Vector2(-76, 208)
+scale = Vector2(4, 4)
 
-[node name="Score label (tbd)" type="CanvasLayer" parent="."]
-visible = false
+[node name="Score label" type="CanvasLayer" parent="."]
+script = ExtResource("6_fbw8j")
 
-[node name="ScorePanel" type="Panel" parent="Score label (tbd)"]
+[node name="ScorePanel" type="Panel" parent="Score label"]
 offset_right = 1152.0
-offset_bottom = 50.0
+offset_bottom = 97.0
 
-[node name="ScoreLabel" type="Label" parent="Score label (tbd)"]
+[node name="Label" type="Label" parent="Score label/ScorePanel"]
+layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -51.8992
-offset_top = 88.1927
-offset_right = 48.1008
-offset_bottom = 130.193
+offset_left = -257.0
+offset_top = 20.0
+offset_right = -59.0
+offset_bottom = 130.0
 grow_horizontal = 2
+theme_override_font_sizes/font_size = 50
 text = "SCORE:"
+
+[node name="ScoreLabel" type="Label" parent="Score label"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -63.0
+offset_top = 21.0
+offset_right = 37.0
+offset_bottom = 63.0003
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 50
 
 [node name="GameOverLayer" parent="." instance=ExtResource("8_lwnm8")]
 

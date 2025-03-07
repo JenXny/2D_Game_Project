@@ -16,6 +16,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	instance.position.y = randi_range(58,1000)
 	position.x = randi_range(58,1000)
 	position.y = randi_range(58,1000)
+	$"../Score label".increaseScore(1)
 
 
 #func _process():

@@ -1,6 +1,6 @@
 extends Node2D
 
-var score : int
+var score = 0
 var game_started : bool = false
 var player_data : Array
 
@@ -18,7 +18,8 @@ func _ready():
 	instance.position.x = randi_range(58,1094)
 	instance.position.y = randi_range(58,1094)
 	
-		
+
+
 func end_game():
 	$GameOverLayer.game_over()
 	game_started = false

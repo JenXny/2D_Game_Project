@@ -25,10 +25,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -50.0
-offset_top = 68.31
-offset_right = 50.0
-offset_bottom = 169.31
+offset_left = -200.0
+offset_top = 54.0
+offset_right = 200.0
+offset_bottom = 293.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -38,19 +38,22 @@ layout_mode = 2
 
 [node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 50
 text = "Play"
 
 [node name="Load" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "Load"
+theme_override_font_sizes/font_size = 50
+text = "How To Play"
 
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 50
 text = "Quit"
 
 [node name="RockslideGameTitleWip" type="Sprite2D" parent="."]
-position = Vector2(574, 507)
-scale = Vector2(0.8, 0.8)
+position = Vector2(576, 423)
+scale = Vector2(1.25, 1.25)
 texture = ExtResource("3_22qxd")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]

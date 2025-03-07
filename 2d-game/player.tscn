@@ -1,11 +1,11 @@
-[gd_scene load_steps=24 format=3 uid="uid://m4q84axkfn18"]
+[gd_scene load_steps=23 format=3 uid="uid://m4q84axkfn18"]
 
 [ext_resource type="Texture2D" uid="uid://c6vq1ckiy6l2q" path="res://character.png" id="1_d42ek"]
 
 [sub_resource type="GDScript" id="GDScript_cxvok"]
 script/source = "extends CharacterBody2D
 
-@export var speed = 4
+@export var speed = 5
 @export var score = 0
 #@export var direction = 
 #^^^ to check directions
@@ -170,10 +170,6 @@ animations = [{
 "speed": 30.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7se5l"]
-radius = 16.0
-height = 41.0
-
 [node name="Player" type="CharacterBody2D"]
 scale = Vector2(2, 2)
 script = SubResource("GDScript_cxvok")
@@ -184,8 +180,8 @@ sprite_frames = SubResource("SpriteFrames_1ov0r")
 frame = 13
 frame_progress = 0.668324
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_7se5l")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-6.5, 5, -5.5, 11, -4, 13.5, 4, 14, 4.5, 10.5, 6, 10, 6, 4.5, 8.5, 4.5, 9, -0.5, 12, -2.5, 12, -10, 7, -15, -7, -15, -12, -11, -12.5, -2.5, -10.5, -2, -10.5, 2)
 
 [node name="Character" type="Sprite2D" parent="."]
 visible = false
