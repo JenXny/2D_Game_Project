@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://game_over_layer.gd" id="1_vx2je"]
 
-[node name="CanvasLayer2" type="CanvasLayer"]
+[node name="Game_Over_layer" type="CanvasLayer"]
 script = ExtResource("1_vx2je")
 
 [node name="Panel" type="Panel" parent="."]

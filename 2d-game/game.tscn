@@ -7885,6 +7885,6 @@ shape = SubResource("RectangleShape2D_18xkn")
 position = Vector2(-266, 350)
 shape = SubResource("RectangleShape2D_18xkn")
 
-[node name="Area2D2" parent="." instance=ExtResource("6_wtdw4")]
+[node name="Rock1" parent="." instance=ExtResource("6_wtdw4")]
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_border_body_entered"]

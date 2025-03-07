@@ -19,6 +19,8 @@ func _ready():
 	
 		
 func end_game():
+	$GameOverLayer.game_over()
+	$player.paused = true
 	game_started = false
 	print ("Game Over")
 
