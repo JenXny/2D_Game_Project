@@ -48,5 +48,5 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Play Again"
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_reset_button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

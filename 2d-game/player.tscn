@@ -5,7 +5,7 @@
 [sub_resource type="GDScript" id="GDScript_cxvok"]
 script/source = "extends CharacterBody2D
 
-@export var speed = 5
+@export var speed = 3.5
 @export var score = 0
 #@export var direction = 
 #^^^ to check directions
@@ -15,22 +15,22 @@ func _ready():
 func _process(delta):
 	if Input.is_action_pressed(\"move_right\"):
 		velocity = Vector2.ZERO
-		velocity.x = 500
+		velocity.x = 400
 		$AnimatedSprite2D.play(\"left-right\")
 		$AnimatedSprite2D.flip_h = false
 	if Input.is_action_pressed(\"move_left\"):
 		velocity = Vector2.ZERO
-		velocity.x = -500
+		velocity.x = -400
 		$AnimatedSprite2D.play(\"left-right\")
 		$AnimatedSprite2D.flip_h = true
 	if Input.is_action_pressed(\"move_up\"):
 		velocity = Vector2.ZERO
-		velocity.y = -500
+		velocity.y = -400
 		$AnimatedSprite2D.play(\"up\")
 		$AnimatedSprite2D.flip_h = true
 	if Input.is_action_pressed(\"move_down\"):
 		velocity = Vector2.ZERO
-		velocity.y = 500
+		velocity.y = 400
 		$AnimatedSprite2D.play(\"down\")
 		$AnimatedSprite2D.flip_h = false
 	move_and_slide()
