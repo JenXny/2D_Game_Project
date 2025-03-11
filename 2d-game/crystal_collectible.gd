@@ -21,3 +21,8 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 
 #func _process():
 	
+
+
+func _on_area_2d_area_entered(area: Area2D):
+	position.x = randi_range(58,1000)
+	position.y = randi_range(58,1000)
