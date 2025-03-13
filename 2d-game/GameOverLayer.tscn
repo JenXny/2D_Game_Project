@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cvn6d0d1mm88n"]
+[gd_scene load_steps=3 format=3 uid="uid://cvn6d0d1mm88n"]
 
 [ext_resource type="Script" path="res://game_over_layer.gd" id="1_vx2je"]
+[ext_resource type="AudioStream" uid="uid://b6mg24ma2f4gc" path="res://music and sfx/death sound effect.mp3" id="2_w8lc1"]
 
 [node name="Game_Over_layer" type="CanvasLayer"]
 process_mode = 3
@@ -48,5 +49,9 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Play Again"
 
-[connection signal="pressed" from="Button" to="." method="_on_reset_button_pressed"]
+[node name="sfx_death" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_w8lc1")
+volume_db = 2.0
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_reset_button_pressed"]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://c0mk0c2o2eyjp"]
+[gd_scene load_steps=5 format=3 uid="uid://c0mk0c2o2eyjp"]
 
 [ext_resource type="Texture2D" uid="uid://cjw81q773s4hm" path="res://textures/crystal_collectible.png" id="1_2qj7e"]
 [ext_resource type="Script" path="res://crystal_collectible.gd" id="2_tbb08"]
+[ext_resource type="AudioStream" uid="uid://bus0qvimnvq1p" path="res://music and sfx/coin7.wav" id="3_upn8o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rm6o2"]
 
@@ -14,6 +15,9 @@ script = ExtResource("2_tbb08")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="area2d"]
 shape = SubResource("RectangleShape2D_rm6o2")
+
+[node name="sfx_collect" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_upn8o")
 
 [connection signal="area_entered" from="area2d" to="." method="_on_area_2d_area_entered"]
 [connection signal="body_entered" from="area2d" to="." method="_on_area_2d_body_entered"]

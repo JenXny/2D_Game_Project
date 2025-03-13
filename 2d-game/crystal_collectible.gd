@@ -1,9 +1,7 @@
 extends Sprite2D
 
+@onready var sfx_collect = $sfx_collect
 
-# Called when the node enters the scene tree for the first time.
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 
@@ -12,6 +10,7 @@ var rockwalltexture1x1 = preload("res://rock_walls_texture_1x_1.tscn")
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	var instance = rockwalltexture1x1.instantiate()
 	$"..".add_child(instance)
+	sfx_collect.play()
 	try_to_spawn_rock(instance)
 	position.x = randi_range(58,1000)
 	position.y = randi_range(58,1000)

@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxvxhrl4wq5ro"]
+
+[ext_resource type="Texture2D" uid="uid://b7jyoj4xky5he" path="res://textures/startbackground.jpg" id="1_gjjhm"]
+[ext_resource type="Script" path="res://instructions.gd" id="1_uccwj"]
+[ext_resource type="Texture2D" uid="uid://c17klmrgkj4q" path="res://textures/instructions.png" id="2_xi6qy"]
+
+[node name="Instructions" type="Node2D"]
+script = ExtResource("1_uccwj")
+
+[node name="opening" type="Sprite2D" parent="."]
+position = Vector2(573, 574.75)
+scale = Vector2(1.045, 1.69852)
+texture = ExtResource("1_gjjhm")
+
+[node name="Instructions" type="Sprite2D" parent="."]
+position = Vector2(576, 576)
+texture = ExtResource("2_xi6qy")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 991.0
+offset_top = 1239.72
+offset_right = 1391.0
+offset_bottom = 1478.72
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "Play"

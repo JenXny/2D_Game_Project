@@ -16,17 +16,10 @@ func _on_play_pressed() -> void:
 
 # Function to load a saved game
 func _on_load_pressed() -> void:
-	# Implement a save/load system based on your game
-	if FileAccess.file_exists("user://savegame.tres"):
-		var save_data = ResourceLoader.load("user://savegame.tres")
-		if save_data:
-			print("Loaded game data successfully!")
-			# Load the saved game scene or state
-			get_tree().change_scene_to_file("res://game.tscn")
-		else:
-			print("Error: Save data is corrupted or cannot be loaded.")
+	if ResourceLoader.exists("res://instructions.tscn"):
+		get_tree().change_scene_to_file("res://instrutions.tscn")
 	else:
-		print("No save file found.")
+		print("Error: Game scene not found!")
 
 # Function to quit the game
 func _on_quit_pressed() -> void:

@@ -1,9 +1,10 @@
-[gd_scene load_steps=14 format=4 uid="uid://de28dp86o44j7"]
+[gd_scene load_steps=15 format=4 uid="uid://de28dp86o44j7"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_h5ybq"]
 [ext_resource type="Texture2D" uid="uid://cwpkfc7mvhlgw" path="res://textures/Viele_Stein.png" id="2_nxhi6"]
 [ext_resource type="Texture2D" uid="uid://b2ihp0b52fkxh" path="res://textures/Cave - Floor.png" id="4_0q2em"]
 [ext_resource type="PackedScene" uid="uid://m4q84axkfn18" path="res://player.tscn" id="4_b4wig"]
+[ext_resource type="AudioStream" uid="uid://c8g7eftnlnic8" path="res://music and sfx/ROCKSLIDE_game_music.mp3" id="5_2yeoi"]
 [ext_resource type="Script" path="res://score_label.gd" id="6_fbw8j"]
 [ext_resource type="PackedScene" uid="uid://cpb5e5fnolkor" path="res://rock_walls_texture_1x_1.tscn" id="6_wtdw4"]
 [ext_resource type="PackedScene" uid="uid://c0mk0c2o2eyjp" path="res://crystal_collectible.tscn" id="7_237qw"]
@@ -7844,6 +7845,11 @@ tile_set = SubResource("TileSet_vo3w4")
 [node name="player" parent="." instance=ExtResource("4_b4wig")]
 position = Vector2(270, 320)
 scale = Vector2(2.5, 2.5)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="player"]
+stream = ExtResource("5_2yeoi")
+autoplay = true
+parameters/looping = true
 
 [node name="CrystalCollectible" parent="." instance=ExtResource("7_237qw")]
 position = Vector2(-76, 208)

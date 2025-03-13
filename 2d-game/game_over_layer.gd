@@ -1,5 +1,7 @@
 extends CanvasLayer
 
+@onready var sfx_death = $sfx_death
+
 signal restart
 
 func _ready():
@@ -7,6 +9,7 @@ func _ready():
 
 func game_over():
 	show()
+	sfx_death.play()
 	get_tree().paused = true
 	
 
