@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cxvxhrl4wq5ro"]
+[gd_scene load_steps=5 format=3 uid="uid://cxvxhrl4wq5ro"]
 
 [ext_resource type="Texture2D" uid="uid://b7jyoj4xky5he" path="res://textures/startbackground.jpg" id="1_gjjhm"]
 [ext_resource type="Script" path="res://instructions.gd" id="1_uccwj"]
 [ext_resource type="Texture2D" uid="uid://c17klmrgkj4q" path="res://textures/instructions.png" id="2_xi6qy"]
+[ext_resource type="AudioStream" uid="uid://co4pn2bxidi0y" path="res://music and sfx/ROCKSLIDE_main_menu.mp3" id="4_ij83u"]
 
 [node name="Instructions" type="Node2D"]
 script = ExtResource("1_uccwj")
@@ -16,24 +17,15 @@ texture = ExtResource("1_gjjhm")
 position = Vector2(576, 576)
 texture = ExtResource("2_xi6qy")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 991.0
-offset_top = 1239.72
-offset_right = 1391.0
-offset_bottom = 1478.72
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
-custom_minimum_size = Vector2(100, 100)
-layout_mode = 2
-
-[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
+[node name="Play" type="Button" parent="."]
+offset_left = 424.0
+offset_top = 851.0
+offset_right = 722.0
+offset_bottom = 928.0
 theme_override_font_sizes/font_size = 50
 text = "Play"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_ij83u")
+autoplay = true
+parameters/looping = true

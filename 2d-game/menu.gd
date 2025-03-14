@@ -16,10 +16,8 @@ func _on_play_pressed() -> void:
 
 # Function to load a saved game
 func _on_load_pressed() -> void:
-	if ResourceLoader.exists("res://instructions.tscn"):
-		get_tree().change_scene_to_file("res://instrutions.tscn")
-	else:
-		print("Error: Game scene not found!")
+	get_tree().change_scene_to_file("res://instructions.tscn")
+	
 
 # Function to quit the game
 func _on_quit_pressed() -> void:

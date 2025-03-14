@@ -3,7 +3,7 @@ extends Node2D
 
 func _ready() -> void:
 	# Connecting button signals (Ensure buttons are named correctly in the scene)
-	$MarginContainer/VBoxContainer/Play.connect("pressed", _on_play_pressed)
+	$Play.connect("pressed", _on_play_pressed)
 
 # Function to start the game
 func _on_play_pressed() -> void:
