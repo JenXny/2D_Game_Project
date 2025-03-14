@@ -13,13 +13,13 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	sfx_collect.play()
 	try_to_spawn_rock(instance)
 	position.x = randi_range(58,1000)
-	position.y = randi_range(58,1000)
+	position.y = randi_range(70,1000)
 	$"../Score label".increaseScore(1)
 
 func try_to_spawn_rock(instance):
 	instance.position.x = randi_range(58,1000)
 	instance.position.y = randi_range(58,1000)
-	if position.distance_to(instance.position) < 10:
+	if position.distance_to(instance.position) < 10 or $"../player".position.distance_to(instance.position) < 10:
 		try_to_spawn_rock(instance)
 	
 
